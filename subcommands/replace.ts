@@ -162,7 +162,6 @@ export const replaceObject = (
           const propertyName = accessPath.node.property.value;
 
           const newElement = newNodes.reverse().find((prop) => {
-
             if (!t.isObjectProperty(prop)) {
               return false;
             }

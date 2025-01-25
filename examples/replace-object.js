@@ -3,7 +3,7 @@ const __0x2189 = {
   1: "World",
   2: "from",
   3: "JavaScript",
-  4: Math.random(),
+  4: Math,
 };
 
 console.log(

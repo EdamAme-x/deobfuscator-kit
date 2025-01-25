@@ -12,6 +12,7 @@ original code.
 Call it deobfkit, as it is commonly known.
 
 ```bash
+npm i -g deno
 ```
 
 ## Operations
@@ -24,6 +25,7 @@ Call it deobfkit, as it is commonly known.
 - Deobfio (Support for [obfuscator.io](https://obfuscator.io))
 
   `deobfkit deobfio ./index.js`
+  `deobfkit deobfio ./index.js -o ./output.js`
 
   Please note that all deadcode will disappear!
 - Replace array
