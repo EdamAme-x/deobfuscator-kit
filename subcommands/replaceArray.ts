@@ -1,5 +1,5 @@
 import { parse } from "@babel/parser";
-import { type NodePath } from "@babel/traverse";
+import type { NodePath } from "@babel/traverse";
 import * as t from "@babel/types";
 import _traverse from "@babel/traverse";
 const traverse = _traverse.default;
