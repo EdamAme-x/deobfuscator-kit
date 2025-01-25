@@ -1,9 +1,3 @@
 {
-  "imports": {
-    "@babel/generator": "npm:@babel/generator@^7.26.5",
-    "@babel/parser": "npm:@babel/parser@^7.26.7",
-    "@babel/traverse": "npm:@babel/traverse@^7.26.7",
-    "@babel/types": "npm:@babel/types@^7.26.7",
-    "@std/cli": "jsr:@std/cli@^1.0.11"
-  }
+  "imports": {}
 }

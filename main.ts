@@ -1,4 +1,4 @@
-import { parseArgs } from "@std/cli/parse-args";
+import { parseArgs } from "jsr:@std/cli/parse-args";
 import { replaceArray, replaceObject } from "./subcommands/replace.ts";
 
 const args = parseArgs(Deno.args);

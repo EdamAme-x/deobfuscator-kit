@@ -1,9 +1,9 @@
-import { parse } from "@babel/parser";
-import type { NodePath } from "@babel/traverse";
-import * as t from "@babel/types";
-import _traverse from "@babel/traverse";
+import { parse } from "npm:@babel/parser";
+import type { NodePath } from "npm:@babel/traverse";
+import * as t from "npm:@babel/types";
+import _traverse from "npm:@babel/traverse";
 const traverse = _traverse.default;
-import _generate from "@babel/generator";
+import _generate from "npm:@babel/generator";
 import { parseArg } from "../utils/parseArg.ts";
 const generate = _generate.default;
 
