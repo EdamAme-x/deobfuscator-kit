@@ -1,90 +1,24 @@
-import { parse } from "@babel/parser";
-import { type NodePath } from "@babel/traverse";
-import * as t from "@babel/types";
-import _traverse from "@babel/traverse";
-const traverse = _traverse.default;
-import _generate from "@babel/generator";
-const generate = _generate.default;
+import { parseArgs } from "@std/cli/parse-args";
+import { replaceArray } from "./subcommands/replaceArray.ts";
 
-const variableName = "a";
-const code = `
-const a = [1, 2, 3];
-const b = () => {
-  return a[0] + a[1] + a[2];
-};
-`;
+const args = parseArgs(Deno.args);
 
-const ast = parse(code);
+const subcommand = args._[0];
 
-traverse(ast, {
-  VariableDeclarator(path: NodePath<t.VariableDeclarator>) {
-    if (path.node.id.name === variableName) {
-      const parentPath = path.findParent((parent: NodePath) =>
-        parent.isProgram()
-      );
-      if (!parentPath) {
-        return;
-      }
+switch (subcommand) {
+  case "replace-array": {
+    const filepath = String(args._[1]);
+    const name = args.name;
 
-      const binding = path.scope.getBinding(variableName);
-
-      if (!binding) {
-        return;
-      }
-
-      const references = binding.referencePaths;
-
-      if (references.length === 0) {
-        return;
-      }
-
-      const value = path.node.init;
-      if (!t.isArrayExpression(value)) {
-        return;
-      }
-
-      const elements = value.elements;
-
-      if (!elements) {
-        return;
-      }
-
-      const newNodes = elements.map((element) => {
-        if (!t.isNumericLiteral(element)) {
-          return element;
-        }
-
-        return t.numericLiteral(element.value);
-      });
-
-      let isNoSideEffects = true;
-
-      references.forEach((reference: NodePath) => {
-        const accessPath = reference.parentPath;
-        const explicitIndex = accessPath.node.property.value;
-
-        if (typeof explicitIndex === "number") {
-          const newElement = newNodes[explicitIndex] ||
-            t.identifier("undefined");
-
-          if (t.isFunction(newElement)) {
-            isNoSideEffects = false
-            return;
-          }
-
-          accessPath.replaceWith(newElement);
-        } else {
-          isNoSideEffects = false;
-        }
-      });
-
-      if (isNoSideEffects) {
-        path.remove();
-      }
+    if (!name) {
+      throw new Error("Name is required");
     }
-  },
-});
 
-const { code: transformedCode } = generate(ast);
+    const output = args.output;
+    const override = args.override;
+    const ignoreSideEffects = args["ignore-side-effects"];
 
-console.log(transformedCode);
+    replaceArray(filepath, name, output, override, ignoreSideEffects);
+    break;
+  }
+}
