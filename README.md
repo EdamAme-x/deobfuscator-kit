@@ -38,3 +38,8 @@ Call it deobfkit, as it is commonly known.
     ```js
         console.log(1 + 2 + 3);
     ```
+
+**Common Options**
+
+- `--output`: Output the deobfuscated code to a file. Support `stdout`
+- `--overwrite`: Overwrite the original file. Default is true.
