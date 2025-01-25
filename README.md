@@ -6,7 +6,10 @@ It includes tools for deobfuscating code, replace array, and more.
 Repeat each operation over and over again, and you will gradually return to the original code.
 
 ## Installation
+Call it deobfkit, as it is commonly known.
 
+```bash
+```
 
 ## Operations
 
