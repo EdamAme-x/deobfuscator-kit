@@ -14,10 +14,13 @@ Call it deobfkit, as it is commonly known.
 ## Operations
 
 - Synchrony (Support for any obfuscator)  
+
     `deobfkit synchrony ./index.js`
 - Deobfio (Support for [obfuscator.io](https://obfuscator.io))  
+
     `deobfkit deobfio ./index.js`
 - Replace array  
+
     `deobfkit replace-array ./index.js name="__0x2189"`
     
     **Before**
