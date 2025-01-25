@@ -1,0 +1,154 @@
+{
+  "version": "4",
+  "specifiers": {
+    "npm:@babel/generator@^7.26.5": "7.26.5",
+    "npm:@babel/parser@^7.26.7": "7.26.7",
+    "npm:@babel/traverse@^7.26.7": "7.26.7",
+    "npm:@babel/types@^7.26.7": "7.26.7"
+  },
+  "npm": {
+    "@babel/code-frame@7.26.2": {
+      "integrity": "sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==",
+      "dependencies": [
+        "@babel/helper-validator-identifier",
+        "js-tokens",
+        "picocolors"
+      ]
+    },
+    "@babel/generator@7.26.5": {
+      "integrity": "sha512-2caSP6fN9I7HOe6nqhtft7V4g7/V/gfDsC3Ag4W7kEzzvRGKqiv0pu0HogPiZ3KaVSoNDhUws6IJjDjpfmYIXw==",
+      "dependencies": [
+        "@babel/parser",
+        "@babel/types",
+        "@jridgewell/gen-mapping",
+        "@jridgewell/trace-mapping",
+        "jsesc"
+      ]
+    },
+    "@babel/helper-string-parser@7.25.9": {
+      "integrity": "sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA=="
+    },
+    "@babel/helper-validator-identifier@7.25.9": {
+      "integrity": "sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ=="
+    },
+    "@babel/parser@7.26.7": {
+      "integrity": "sha512-kEvgGGgEjRUutvdVvZhbn/BxVt+5VSpwXz1j3WYXQbXDo8KzFOPNG2GQbdAiNq8g6wn1yKk7C/qrke03a84V+w==",
+      "dependencies": [
+        "@babel/types"
+      ]
+    },
+    "@babel/template@7.25.9": {
+      "integrity": "sha512-9DGttpmPvIxBb/2uwpVo3dqJ+O6RooAFOS+lB+xDqoE2PVCE8nfoHMdZLpfCQRLwvohzXISPZcgxt80xLfsuwg==",
+      "dependencies": [
+        "@babel/code-frame",
+        "@babel/parser",
+        "@babel/types"
+      ]
+    },
+    "@babel/traverse@7.26.7": {
+      "integrity": "sha512-1x1sgeyRLC3r5fQOM0/xtQKsYjyxmFjaOrLJNtZ81inNjyJHGIolTULPiSc/2qe1/qfpFLisLQYFnnZl7QoedA==",
+      "dependencies": [
+        "@babel/code-frame",
+        "@babel/generator",
+        "@babel/parser",
+        "@babel/template",
+        "@babel/types",
+        "debug",
+        "globals"
+      ]
+    },
+    "@babel/types@7.26.7": {
+      "integrity": "sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==",
+      "dependencies": [
+        "@babel/helper-string-parser",
+        "@babel/helper-validator-identifier"
+      ]
+    },
+    "@jridgewell/gen-mapping@0.3.8": {
+      "integrity": "sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==",
+      "dependencies": [
+        "@jridgewell/set-array",
+        "@jridgewell/sourcemap-codec",
+        "@jridgewell/trace-mapping"
+      ]
+    },
+    "@jridgewell/resolve-uri@3.1.2": {
+      "integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw=="
+    },
+    "@jridgewell/set-array@1.2.1": {
+      "integrity": "sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A=="
+    },
+    "@jridgewell/sourcemap-codec@1.5.0": {
+      "integrity": "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="
+    },
+    "@jridgewell/trace-mapping@0.3.25": {
+      "integrity": "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==",
+      "dependencies": [
+        "@jridgewell/resolve-uri",
+        "@jridgewell/sourcemap-codec"
+      ]
+    },
+    "debug@4.4.0": {
+      "integrity": "sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==",
+      "dependencies": [
+        "ms"
+      ]
+    },
+    "globals@11.12.0": {
+      "integrity": "sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA=="
+    },
+    "js-tokens@4.0.0": {
+      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
+    },
+    "jsesc@3.1.0": {
+      "integrity": "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA=="
+    },
+    "ms@2.1.3": {
+      "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="
+    },
+    "picocolors@1.1.1": {
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
+    }
+  },
+  "redirects": {
+    "https://cdn.skypack.dev/@babel/traverse": "https://cdn.skypack.dev/new/@babel/traverse@v7.26.7/dist=es2019",
+    "https://cdn.skypack.dev/new/@babel/traverse@v7.26.7/dist=es2019": "https://cdn.skypack.dev/-/@babel/traverse@v7.26.7-JjVespIYhMWVuBrzszIC/dist=es2019,mode=imports/optimized/@babel/traverse.js",
+    "https://cdn.skypack.dev/new/@babel/types@v7.26.7/dist=es2019,mode=imports?from=@babel/types": "https://cdn.skypack.dev/-/@babel/types@v7.26.7-oFcaVF0upBa7eMaeZvxK/dist=es2019,mode=imports/optimized/@babel/types.js"
+  },
+  "remote": {
+    "https://cdn.skypack.dev/-/@babel/code-frame@v7.26.0-FtKAXV9rQFiy8zrCZtw9/dist=es2019,mode=imports/optimized/@babel/code-frame.js": "dba21b78298ce3b5f5df07462bb7826008b5a620f40fdf73e2642d16f5bd28fe",
+    "https://cdn.skypack.dev/-/@babel/code-frame@v7.26.2-MLokmXFHDQQGkQOJk9v2/dist=es2019,mode=imports/optimized/@babel/code-frame.js": "9b88f665c1cb9a394773a4d737bd1dc2da7df1c372f2abef9b1f40a16b665543",
+    "https://cdn.skypack.dev/-/@babel/generator@v7.26.5-xMyhlELgopxRoVXUoFDJ/dist=es2019,mode=imports/optimized/@babel/generator.js": "bd91090f0825ec63abb4b230c73e37a5be51e8686ca1874aefa23e7eed2e3d9b",
+    "https://cdn.skypack.dev/-/@babel/helper-string-parser@v7.25.9-g1W8yEgHpbQYGMak9IKP/dist=es2019,mode=imports/optimized/@babel/helper-string-parser.js": "c8573fbbdbfb85c6cee7c69fee50336fddaefa5085116e6047a9e73a5cb3b75a",
+    "https://cdn.skypack.dev/-/@babel/helper-validator-identifier@v7.25.9-8GLo8CpE4dpXFefStUYW/dist=es2019,mode=imports/optimized/@babel/helper-validator-identifier.js": "a27f48b6386611b5f9941de5994e0ead16ea43a27404525a0f4f827e7f84b013",
+    "https://cdn.skypack.dev/-/@babel/parser@v7.26.1-jOMPXC9qwxhJXhUvr2ba/dist=es2019,mode=imports/optimized/@babel/parser.js": "25b495a1e6384f693f4b3ca67669e851d445dfa9c9145e42c0f73a720b120221",
+    "https://cdn.skypack.dev/-/@babel/parser@v7.26.7-H8gGlCtSnEyUKbYcqgLw/dist=es2019,mode=imports/optimized/@babel/parser.js": "e2173d3db51da15d48e71491dc97cb202af25cf450ce650c6f2a3105e525acc8",
+    "https://cdn.skypack.dev/-/@babel/template@v7.25.9-MFrkz3CQMGaAxddyG8fA/dist=es2019,mode=imports/optimized/@babel/template.js": "033798187f86e0faa85c99cb720f3dd76c465792d889af58c3683e31b65f37dd",
+    "https://cdn.skypack.dev/-/@babel/traverse@v7.26.7-JjVespIYhMWVuBrzszIC/dist=es2019,mode=imports/optimized/@babel/traverse.js": "7b9e34f0945144011367764b563712640cc844a0da6ecaa16c52baae8222b566",
+    "https://cdn.skypack.dev/-/@babel/types@v7.26.0-MPkc7jbIHxpi8rdwSRgg/dist=es2019,mode=imports/optimized/@babel/types.js": "f63c0cea2ffa5f679b2c9011564e62d70762002a6aaff6289e18d054322c39a9",
+    "https://cdn.skypack.dev/-/@babel/types@v7.26.5-z4FFjYUkGblVUDzM8L6l/dist=es2019,mode=imports/optimized/@babel/types.js": "d8a6cb00a05738ddee6b57baabfbf1e58f6bb81faadb27730a4d73862aac5349",
+    "https://cdn.skypack.dev/-/@babel/types@v7.26.7-oFcaVF0upBa7eMaeZvxK/dist=es2019,mode=imports/optimized/@babel/types.js": "998714ba27901dd195936163ed267c8106d84f63819d2c69481b05717bf1c7c1",
+    "https://cdn.skypack.dev/-/@jridgewell/gen-mapping@v0.3.8-C4BZkm4TyKqs05wQZH1H/dist=es2019,mode=imports/optimized/@jridgewell/gen-mapping.js": "89e7ad9cc6033c0231aef0c9e52eef896a96842ba11b685c1586f9dcecd143b4",
+    "https://cdn.skypack.dev/-/@jridgewell/resolve-uri@v3.1.2-Q2vHOeUWhJ6vyx5pZsmo/dist=es2019,mode=imports/optimized/@jridgewell/resolve-uri.js": "a53161784840b57796b33a046be413b4e032db299f05adb591767e0530b13260",
+    "https://cdn.skypack.dev/-/@jridgewell/set-array@v1.2.1-RpJFsxFGXdxkNhyZaHCb/dist=es2019,mode=imports/optimized/@jridgewell/set-array.js": "a3fae539255f6cc7867b9daeadab3c814e62883c12cb490afde9f841904a878a",
+    "https://cdn.skypack.dev/-/@jridgewell/sourcemap-codec@v1.4.15-ByLfhN3wDAxoXUe9LZJl/dist=es2019,mode=imports/optimized/@jridgewell/sourcemap-codec.js": "e856f371b31003d6f775f8fc0df5d5c3fc63c9ec2f7577f6ab67db4dc33684c4",
+    "https://cdn.skypack.dev/-/@jridgewell/sourcemap-codec@v1.5.0-JtXE4lwvkEKOz3cC8wKL/dist=es2019,mode=imports/optimized/@jridgewell/sourcemap-codec.js": "9727ddc92bdea7ecfab91baac12f00ff0db69c0bf30c2deb98cb3ef3e0259b2d",
+    "https://cdn.skypack.dev/-/@jridgewell/trace-mapping@v0.3.25-xFmOIT81uaY1P7FZTVBS/dist=es2019,mode=imports/optimized/@jridgewell/trace-mapping.js": "0a5bf3a1244aeff2f935aa70a2ed6e25823df2f29805c5a849bb540296106f66",
+    "https://cdn.skypack.dev/-/debug@v4.4.0-sFNufhhAjhtJQqr5zWiU/dist=es2019,mode=imports/optimized/debug.js": "bbbea7fedf5b6d7eabf399e685d48657c06dc31e0b65a09f6d7679f268e33057",
+    "https://cdn.skypack.dev/-/globals@v11.12.0-EuxArogkrKZhxjvSqTWj/dist=es2019,mode=imports/optimized/globals.js": "176c5a0bfba3545fbbafda34edadb4db7526a116b41e1b859ce0f741f815f9c3",
+    "https://cdn.skypack.dev/-/js-tokens@v4.0.0-OJ5evu99DwoXozvuFE3S/dist=es2019,mode=imports/optimized/js-tokens.js": "7b476e93fcdeddfa87e118e56fdea9a9c1507eacb882482dad8d6bc443ba4a06",
+    "https://cdn.skypack.dev/-/jsesc@v3.1.0-9XKTmsBKbfP8N0RjWF0Z/dist=es2019,mode=imports/optimized/jsesc.js": "57a2c5dbef9181a2b931fccd8557c0b3039349240145d86882276ce90585538f",
+    "https://cdn.skypack.dev/-/ms@v2.1.3-dWyghJmVCt8Lp5D9h2ww/dist=es2019,mode=imports/optimized/ms.js": "fd88e2d51900437011f1ad232f3393ce97db1b87a7844b3c58dd6d65562c1276",
+    "https://cdn.skypack.dev/-/picocolors@v1.1.1-3oTo0Q0QHpCgy8yh3k5z/dist=es2019,mode=imports/optimized/picocolors.js": "d1566dcdc8202a0d4999c821ed133e68d5d7e212b0e1e4228cdcc97f2c4a18e2",
+    "https://cdn.skypack.dev/@babel/generator": "fa0402a1c8a82909e7213bac6040dd638e6d742e315a121b06736c9b8ddb70dd",
+    "https://cdn.skypack.dev/@babel/parser": "bbb1df434cc471b064cdfce3c5c09ee5e9ca51997871f2cd07c16e827111c864"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@babel/generator@^7.26.5",
+      "npm:@babel/parser@^7.26.7",
+      "npm:@babel/traverse@^7.26.7",
+      "npm:@babel/types@^7.26.7"
+    ]
+  }
+}
