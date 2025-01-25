@@ -50,3 +50,11 @@ Call it deobfkit, as it is commonly known.
 
 - `--output`: Output the deobfuscated code to a file. Support `stdout`
 - `--overwrite`: Overwrite the original file. Default is true.
+
+## ToDo
+
+- Cleanup Errors
+
+## License
+
+MIT
