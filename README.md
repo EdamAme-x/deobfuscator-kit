@@ -13,7 +13,7 @@ Call it deobfkit, as it is commonly known.
 
 ```bash
 npm i -g deno
-deno install -g -A -n deobfkit -f https://raw.githubusercontent.com/EdamAme-x/evex-builder/2143865311faf523ea37aea6062b20b8faf3c38d/main.ts
+deno install -g -A -n deobfkit -f https://raw.githubusercontent.com/EdamAme-x/deobfuscator-kit/refs/heads/main/main.ts
 ```
 
 ## Operations
