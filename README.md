@@ -16,9 +16,13 @@ Call it deobfkit, as it is commonly known.
 - Synchrony (Support for any obfuscator)  
 
     `deobfkit synchrony ./index.js`
+
+    Please note code that it breaks down by accident.
 - Deobfio (Support for [obfuscator.io](https://obfuscator.io))  
 
     `deobfkit deobfio ./index.js`
+
+    Please note that all deadcode will disappear!
 - Replace array  
 
     `deobfkit replace-array ./index.js name="__0x2189"`
